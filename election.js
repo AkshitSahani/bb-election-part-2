@@ -46,8 +46,13 @@ $(document).ready(function() {
         data: {'name': $(this).siblings('input[type=hidden]').val()}
       }
       ).done(function(){
-        console.log('done');
+        location.reload();
       });
     })
+
+// to reload a page (location.reload())
+    // $('.refresh').on('click', function(){
+    //   location.reload();
+    
   });
 });
